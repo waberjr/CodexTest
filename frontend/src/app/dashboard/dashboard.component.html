@@ -1,0 +1,14 @@
+<section class="p-6">
+  <h2 class="text-3xl font-bold mb-6">Seus Agentes</h2>
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div *ngFor="let agent of agents" class="bg-gray-800 p-4 rounded shadow">
+      <h3 class="text-xl font-semibold">{{agent.name}}</h3>
+      <p class="text-gray-400 mb-4">{{agent.type}}</p>
+      <div class="flex space-x-2">
+        <button class="px-3 py-1 bg-indigo-600 rounded">Editar</button>
+        <button class="px-3 py-1 bg-red-600 rounded">Excluir</button>
+        <button class="px-3 py-1 bg-gray-700 rounded">Visualizar</button>
+      </div>
+    </div>
+  </div>
+</section>
